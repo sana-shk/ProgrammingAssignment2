@@ -2,7 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+##makeCacheMatrix is a parent function and it will create a matrix object that can cache inverse
 makeCacheMatrix <- function(x = matrix()) {
  
    j <- NULL
@@ -22,10 +22,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## cacheSolve function computes the inverse of the matrix created with the above mentioned function
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
-  j <- x$getInverse()
+  j <- x$getInverse() ## assigns inverse to j
   if(!is.null(j)){
     message("getting cached data")
     return(j)
